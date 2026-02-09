@@ -66,7 +66,21 @@ const KanbanBoard = () => {
     if (!over) return;
 
     const activeApp = applications.find(app => app.id === active.id);
-    const newStatus = over.id;
+    
+    // Check if we dropped over a column or a card
+    // If dropped over a card, find which column that card belongs to
+    let newStatus = over.id;
+    const validStatuses = ['applied', 'shortlisted', 'round1', 'round2', 'round3', 'offer'];
+    
+    if (!validStatuses.includes(newStatus)) {
+      // We dropped over a card, find its status
+      const targetApp = applications.find(app => app.id === over.id);
+      if (targetApp) {
+        newStatus = targetApp.status;
+      } else {
+        return; // Invalid drop target
+      }
+    }
 
     if (activeApp && activeApp.status !== newStatus) {
       try {
