@@ -1,2 +1,2 @@
 #!/bin/bash
-cd frontend && yarn install && yarn build
+cd frontend && yarn install && yarn build && cd ..
