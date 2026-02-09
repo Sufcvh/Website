@@ -1,0 +1,123 @@
+{
+  "design_system": {
+    "typography": {
+      "font_family": {
+        "heading": "Plus Jakarta Sans, sans-serif",
+        "body": "Inter, sans-serif",
+        "mono": "JetBrains Mono, monospace"
+      },
+      "scale": {
+        "h1": "text-4xl md:text-5xl font-bold tracking-tight",
+        "h2": "text-3xl md:text-4xl font-semibold tracking-tight",
+        "h3": "text-2xl font-semibold tracking-tight",
+        "body_large": "text-lg leading-relaxed",
+        "body_base": "text-base leading-relaxed",
+        "caption": "text-sm text-muted-foreground uppercase tracking-wider"
+      }
+    },
+    "colors": {
+      "palette": {
+        "name": "Swiss High-Contrast",
+        "description": "Objective, rigid, functional. 95% monochrome with signal colors for action.",
+        "base": {
+          "background": "bg-white dark:bg-zinc-950",
+          "foreground": "text-zinc-950 dark:text-zinc-50",
+          "card": "bg-white dark:bg-zinc-900",
+          "border": "border-zinc-200 dark:border-zinc-800"
+        },
+        "accents": {
+          "primary": "bg-zinc-900 text-white dark:bg-white dark:text-zinc-900",
+          "secondary": "bg-zinc-100 text-zinc-900 dark:bg-zinc-800 dark:text-zinc-50",
+          "success": "text-emerald-600 bg-emerald-50 dark:bg-emerald-950/30 dark:text-emerald-400",
+          "warning": "text-amber-600 bg-amber-50 dark:bg-amber-950/30 dark:text-amber-400",
+          "danger": "text-rose-600 bg-rose-50 dark:bg-rose-950/30 dark:text-rose-400",
+          "info": "text-blue-600 bg-blue-50 dark:bg-blue-950/30 dark:text-blue-400"
+        }
+      }
+    },
+    "spacing": {
+      "container": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+      "section_padding": "py-12 md:py-24",
+      "component_padding": "p-6 md:p-8"
+    },
+    "visual_enhancers": {
+      "borders": "border border-zinc-200 dark:border-zinc-800",
+      "shadows": "shadow-sm hover:shadow-md transition-shadow duration-200",
+      "radius": "rounded-none md:rounded-lg",
+      "glassmorphism": "bg-white/80 dark:bg-zinc-950/80 backdrop-blur-md border-b border-zinc-200/50 dark:border-zinc-800/50"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "rounded-md bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2",
+      "secondary": "rounded-md bg-secondary text-secondary-foreground hover:bg-secondary/80 h-10 px-4 py-2",
+      "ghost": "rounded-md hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2",
+      "outline": "rounded-md border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2"
+    },
+    "cards": {
+      "base": "rounded-lg border bg-card text-card-foreground shadow-sm",
+      "kanban_card": "group relative rounded-md border bg-card p-4 shadow-sm hover:shadow-md transition-all duration-200 cursor-grab active:cursor-grabbing hover:border-zinc-400 dark:hover:border-zinc-600"
+    },
+    "inputs": {
+      "base": "flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+    }
+  },
+  "layout_strategies": {
+    "dashboard": {
+      "type": "bento_grid",
+      "grid_cols": "grid-cols-1 md:grid-cols-4 lg:grid-cols-12",
+      "gap": "gap-6",
+      "widgets": {
+        "summary": "col-span-1 md:col-span-2 lg:col-span-3",
+        "main_chart": "col-span-1 md:col-span-4 lg:col-span-8 row-span-2",
+        "recent_activity": "col-span-1 md:col-span-2 lg:col-span-4 row-span-2"
+      }
+    },
+    "kanban": {
+      "container": "flex h-[calc(100vh-12rem)] overflow-x-auto gap-6 pb-4 items-start",
+      "column": "flex-shrink-0 w-80 flex flex-col gap-4 bg-zinc-50/50 dark:bg-zinc-900/50 p-4 rounded-xl border border-zinc-200/50 dark:border-zinc-800/50 h-full"
+    }
+  },
+  "assets": {
+    "logos": [
+      {
+        "name": "Google",
+        "url": "https://images.unsplash.com/photo-1706879350832-db2615866e54?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MDZ8MHwxfHNlYXJjaHwxfHxnb29nbGUlMjBsb2dvJTIwd2hpdGUlMjBiYWNrZ3JvdW5kfGVufDB8fHx8MTc3MDYzNTMxNnww&ixlib=rb-4.1.0&q=85",
+        "category": "tech"
+      },
+      {
+        "name": "Amazon",
+        "url": "https://images.unsplash.com/photo-1704204656144-3dd12c110dd8?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTB8MHwxfHNlYXJjaHwxfHxhbWF6b24lMjBsb2dvfGVufDB8fHx8MTc3MDYzNTM0NHww&ixlib=rb-4.1.0&q=85",
+        "category": "tech"
+      },
+      {
+        "name": "Microsoft",
+        "url": "https://images.unsplash.com/photo-1661348027228-e7f05cd5a254?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzZ8MHwxfHNlYXJjaHwzfHxtaWNyb3NvZnQlMjBsb2dvJTIwd2hpdGUlMjBiYWNrZ3JvdW5kfGVufDB8fHx8MTc3MDYzNTMyMXww&ixlib=rb-4.1.0&q=85",
+        "category": "tech"
+      },
+      {
+        "name": "Netflix",
+        "url": "https://images.unsplash.com/photo-1637363990764-de84fd247b7d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzV8MHwxfHNlYXJjaHwyfHxuZXRmbGl4JTIwbG9nb3xlbnwwfHx8fDE3NzA2MzUzNDF8MA&ixlib=rb-4.1.0&q=85",
+        "category": "tech"
+      },
+      {
+        "name": "Spotify",
+        "url": "https://images.unsplash.com/photo-1706879350865-e1cdb3792b22?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2ODh8MHwxfHNlYXJjaHwxfHxzcG90aWZ5JTIwbG9nbyUyMHdoaXRlJTIwYmFja2dyb3VuZHxlbnwwfHx8fDE3NzA2MzUzMjd8MA&ixlib=rb-4.1.0&q=85",
+        "category": "tech"
+      }
+    ]
+  },
+  "universal_guidelines": [
+    "Do not use generic centered layouts. Use grids and asymmetry.",
+    "Use 2-3x more spacing than typical designs.",
+    "Every interaction needs micro-animations (hover, focus, active).",
+    "Use 'sonner' for toasts.",
+    "All interactive elements MUST include data-testid attribute.",
+    "Do not use 'transition: all'. Animate specific properties.",
+    "Use Shadcn components from src/components/ui but customize them via className.",
+    "For charts, use Recharts with the defined color palette.",
+    "Ensure high contrast for text (WCAG AA minimum).",
+    "Use 'lucide-react' for icons."
+  ],
+  "instructions_to_main_agent": "Implement the Job Tracker Dashboard using the Swiss Design principles. Focus on the Kanban board as the central feature. Use the provided logo URLs for the mock data in the application cards. Ensure the layout is responsive and uses the defined spacing scale. The dashboard should feel 'objective' and 'precise' - avoid unnecessary decoration."
+}
